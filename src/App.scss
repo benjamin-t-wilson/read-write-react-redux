@@ -1,0 +1,206 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 62.5%;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.2rem;
+    margin: 15px auto;
+  }
+  span {
+    color: crimson;
+  }
+  a {
+    font-size: 1.2rem;
+    color: crimson;
+  }
+  ul,
+  ol {
+    margin: 20px 0;
+  }
+  ul{
+    list-style-type: disc;
+  }
+  ol{
+    list-style: upper-roman;
+  }
+  li {
+    font-size: 1.2rem;
+    margin-left: 40px;
+  }
+  .tab {
+    margin-left: 50px;
+  }
+  .dtab {
+    margin-left: 70px;
+  }
+  .ttab {
+    margin-left: 80px;
+  }
+  header,
+  footer {
+    background: crimson;
+    padding: 20px;
+    color: white;
+    box-shadow: 2px 2px 5px #777;
+    a {
+      color: white;
+    }
+  }
+  .tutorial {
+    z-index: -1;
+    width: 95%;
+    margin: 0 auto;
+    background: lighten(#999, 30%);
+    padding: 20px 0;
+  }
+  .step{
+    width: 95%;
+    margin: 20px auto;
+    background: lighten(#999, 35%);
+    box-shadow: 2px 2px 5px #777;
+    padding: 20px;
+  }
+  .code{
+    background: white;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #777;
+    ul{
+      list-style: none;
+    }
+  }
+}
