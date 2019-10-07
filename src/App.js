@@ -294,6 +294,33 @@ function App() {
             </ul>
           </div>
         </section>
+        <section className="step">
+          <h1><span>||</span> Plot Twist! Another step!?</h1>
+          <p>I'll wait for you to come back with a new keyboard because you've surely broken yours.</p>
+          <p>Welcome back. Okay, so now we have a store. Our App has access to it, as well as our action creator. But if you remember our reducer, we just set a default and didn't tell it anything to do with actions. Hop on back over to the <span>reducers file index.js</span>.</p>
+          <p>Okay, we are going to need to import our <span>action name</span>, then go back down to our <span>switch</span>. We are going to turn this into something reminiscent of an <span>if statement</span> by adding a <span>case</span> that checks the <span>action type</span> and returns an updated state object by first spreading in state to prevent us from losing anything else inside it, then updating the count key. I promise this is fast. Code below:
+          </p>
+          <div className="code">
+            <ul>
+              <li>import INCREASE_COUNT from "../actions";</li>
+            </ul>
+            <ul>
+            <li>
+                export const reducer = (state = initialState, action) => {`{`}
+              </li>
+              <li className="tab">switch (action.type) {`{`}</li>
+              <li className="dtab">case INCREASE_COUNT:</li>
+              <li className="ttab">return {`{`}</li>
+              <li className="qtab">...state</li>
+              <li className="qtab">count: state.count += 1</li>
+              <li className="ttab">{`}`}</li>
+              <li className="dtab">default:</li>
+              <li className="ttab">return state;</li>
+              <li className="tab">{`}`}</li>
+              <li>{`}`}</li>
+            </ul>
+          </div>
+        </section>
       </section>
       <footer>
         <h1>Thank you so much for visiting!</h1>
